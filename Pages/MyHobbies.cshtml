@@ -1,0 +1,11 @@
+﻿@page
+@model part2_HW5.Pages.MyHobbiesModel
+<h2>List Of Hobbies</h2>
+@{
+    foreach (var h in Model.ListOfHobbies)
+    {
+        <ul>
+            <li>Hobby: @h.Name; Status: @h.Status</li>
+        </ul>
+    }
+}
